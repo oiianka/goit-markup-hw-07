@@ -1,0 +1,55 @@
+.hero {
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;}
+
+  .hero_centering {
+  margin: 0 auto;
+}
+
+.hero__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @extend .container 
+}
+
+.hero__header {
+  width: 696px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--big-header-color);
+  flex-wrap: wrap;
+}
+
+.hero__button {
+  font-family: Roboto, sans-serif; /*Якщо я тут ставлю властивість inherit, то кнопка чомусь не наслідує шрифт (те ж саме і з кнопками на сторінці Портфоліо). З чим це може бути пов'язано?*/
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--big-header-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  min-height: 50px;
+  min-width: 200px;
+  padding: 10px 32px;
+  border: 0px solid;
+  border-radius: 4px;
+}
