@@ -60,6 +60,16 @@
   position: absolute;
   right: 8px;
   top: 8px;
+  transition-property: fill;
+  transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus{
+    .close-btn-icon{
+      fill: var(--accent-color);
+    }
+  }
 }
 
 .is-hidden {

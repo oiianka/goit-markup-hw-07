@@ -783,6 +783,21 @@ img {
   margin-bottom: 30px;
 }
 
+.sample__item:hover .sample__overlay {
+  display: inline-block;
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--big-header-color);
+  position: absolute;
+  bottom: 0;
+}
+
 .sample__caption {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
@@ -797,24 +812,9 @@ img {
   position: absolute;
   bottom: -100%;
   background-color: rgba(0, 0, 0, 0);
-  transition-property: background-color, width, height, padding, font-weight, font-size, line-height, letter-spacing, color;
+  transition-property: bottom;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sample__item:hover .sample__overlay {
-  display: inline-block;
-  background-color: rgba(33, 150, 243, 0.9);
-  width: 100%;
-  height: 100%;
-  padding: 63px 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: var(--big-header-color);
-  position: absolute;
-  bottom: 0;
 }
 
 .footer-bg {
@@ -1013,6 +1013,13 @@ img {
   position: absolute;
   right: 8px;
   top: 8px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover .close-btn-icon, .close-btn:focus .close-btn-icon {
+  fill: var(--accent-color);
 }
 
 .is-hidden {
